@@ -33,6 +33,8 @@ release = '0.1'
 extensions = [
     'hoverxref.extension',
     "sphinx.ext.autodoc",
+    "IPython.sphinxext.ipython_directive",
+    "IPython.sphinxext.ipython_console_highlighting",
 
 ]
 hoverxref_auto_ref = True
@@ -71,3 +73,4 @@ html_theme = 'sphinx_rtd_theme'
 # relative to this directory. They are copied after the builtin static files,
 # so a file named "default.css" will overwrite the builtin "default.css".
 html_static_path = ['_static']
+html_domain_indices = True
