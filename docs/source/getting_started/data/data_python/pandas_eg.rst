@@ -5,8 +5,6 @@ pandas
 ************
 
 
-
-========
 基本导出
 ========
 
@@ -17,11 +15,14 @@ pandas
     import numpy as np
     import pandas as pd
 
+
 数据处理
 =========
 
+
 nan 处理
 ^^^^^^^^
+
 创建对象:
 
 .. ipython:: python
@@ -32,6 +33,7 @@ nan 处理
                        [np.nan, 3, np.nan, 4]],
                       columns=list('ABCD'))
     df
+
 
 方法fillna
 ----------
