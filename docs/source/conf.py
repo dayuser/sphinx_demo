@@ -33,6 +33,8 @@ release = '0.1'
 extensions = [
     'hoverxref.extension',
     "sphinx.ext.autodoc",
+    "sphinx.ext.intersphinx",
+    "sphinx.ext.viewcode",
     "IPython.sphinxext.ipython_directive",
     "IPython.sphinxext.ipython_console_highlighting",
 
@@ -77,3 +79,6 @@ autosummary_generate = True
 # so a file named "default.css" will overwrite the builtin "default.css".
 html_static_path = ['_static']
 html_domain_indices = True
+
+html_title = "ibook"
+

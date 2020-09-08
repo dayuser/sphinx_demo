@@ -9,7 +9,7 @@ ibook
 
 
 入门指南
--------
+---------
 
 .. toctree::
    :caption: 入门指南
@@ -33,12 +33,7 @@ ibook
       问题 在开发中遇见的问题
 
 
-索引和索引目录
-==================
 
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
 
 :ref:`dd<sa>`
 
