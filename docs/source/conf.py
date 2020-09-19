@@ -10,9 +10,9 @@
 # add these directories to sys.path here. If the directory is relative to the
 # documentation root, use os.path.abspath to make it absolute, like shown here.
 #
-# import os
-# import sys
-# sys.path.insert(0, os.path.abspath('.'))
+import os
+import sys
+sys.path.insert(0, os.path.abspath('../../ibook'))
 
 
 # -- Project information -----------------------------------------------------
@@ -35,10 +35,17 @@ extensions = [
     "sphinx.ext.autodoc",
     "sphinx.ext.intersphinx",
     "sphinx.ext.viewcode",
+    'sphinx.ext.doctest',
+    'sphinx.ext.todo',
+    'sphinx.ext.coverage',
+    'sphinx.ext.mathjax',
     "IPython.sphinxext.ipython_directive",
     "IPython.sphinxext.ipython_console_highlighting",
-
+    "sphinx.ext.napoleon",
+    "numpydoc",  # handle NumPy documentation formatted docstrings
 ]
+
+
 hoverxref_auto_ref = True
 
 hoverxref_role_types = {
@@ -73,6 +80,7 @@ exclude_patterns = []
 html_theme = "pydata_sphinx_theme"
 
 autosummary_generate = True
+# autosummary_generate = False
 
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,

@@ -24,3 +24,9 @@
 """"""""
 
 :ref:`pandas <data_python_pandas>`
+
+sphinx-apidoc -o source ../ibook/
+
+make clean
+
+make html
