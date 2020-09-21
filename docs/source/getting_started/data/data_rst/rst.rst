@@ -25,7 +25,7 @@
 
 :ref:`pandas <data_python_pandas>`
 
-sphinx-apidoc -o source ../ibook/
+sphinx-apidoc -o source/development ../ibook/
 
 make clean
 

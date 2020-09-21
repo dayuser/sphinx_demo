@@ -12,7 +12,7 @@
 #
 import os
 import sys
-sys.path.insert(0, os.path.abspath('../../ibook'))
+sys.path.insert(0, os.path.abspath('../..'))
 
 
 # -- Project information -----------------------------------------------------
@@ -41,8 +41,10 @@ extensions = [
     'sphinx.ext.mathjax',
     "IPython.sphinxext.ipython_directive",
     "IPython.sphinxext.ipython_console_highlighting",
-    "sphinx.ext.napoleon",
+    # "sphinx.ext.napoleon",
     "numpydoc",  # handle NumPy documentation formatted docstrings
+    "sphinx.ext.autosummary",
+
 ]
 
 
@@ -81,6 +83,7 @@ html_theme = "pydata_sphinx_theme"
 
 autosummary_generate = True
 # autosummary_generate = False
+numpydoc_show_class_members = False
 
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,
